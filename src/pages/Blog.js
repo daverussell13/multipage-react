@@ -17,7 +17,7 @@ const Blog = () => {
   useEffect(() => {
     document.title = "Blog";
     getArticle();
-  }, [articles]);
+  }, []);
 
   return (
     <section className="section">
