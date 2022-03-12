@@ -18,7 +18,10 @@ const BlogDetail = () => {
     setLoading(false);
   };
 
-  useEffect(() => getArticle(), [id]);
+  useEffect(() => {
+    document.title = "Blog Detail";
+    getArticle();
+  }, [id]);
 
   if (notFound) {
     return <h1>Artikel tidak ditemukan :(</h1>;

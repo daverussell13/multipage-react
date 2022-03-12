@@ -14,7 +14,10 @@ const Blog = () => {
     setLoading(false);
   };
 
-  useEffect(() => getArticle(), []);
+  useEffect(() => {
+    document.title = "Blog";
+    getArticle();
+  }, []);
 
   return (
     <section className="section">

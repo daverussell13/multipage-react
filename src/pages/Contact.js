@@ -1,4 +1,7 @@
+import { useEffect } from "react";
+
 const Contact = () => {
+  useEffect(() => (document.title = "Contact"), []);
   return (
     <section className="section">
       <h1 className="section-title">Contact page</h1>
