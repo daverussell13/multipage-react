@@ -14,12 +14,12 @@ const BlogDetail = () => {
     );
     if (!request.ok) return setNotFound(true);
     const response = await request.json();
+    document.title = response.title;
     setArticle(response);
     setLoading(false);
   };
 
   useEffect(() => {
-    document.title = "Blog Detail";
     getArticle();
   }, [id]);
 

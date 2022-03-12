@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 import "./App.css";
 import BlogDetail from "./pages/BlogDetail";
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="blog" element={<Blog />} />
         <Route path="blog/:id" element={<BlogDetail />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
